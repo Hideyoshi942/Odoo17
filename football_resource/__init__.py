@@ -1,1 +1,1 @@
-from . import models, views, controllers, static, wizard
+from . import models, views, controllers, static, wizards
