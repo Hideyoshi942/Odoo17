@@ -5,8 +5,10 @@
     <field name="model">expense</field>
     <field name="arch" type="xml">
       <tree string="Expense">
-        <field name="image"/>
+        <field name="reference"/>
+        <field name="image" widget="image" class="oe_avatar"/>
         <field name="name"/>
+        <field name="currency_id"/>
         <field name="price"/>
         <field name="date"/>
       </tree>
@@ -20,15 +22,17 @@
     <field name="arch" type="xml">
       <form string="Expense">
         <field name="image" widget="image" class="oe_avatar"/>
-          <div class="oe_title">
-            <label for="name"></label>
-            <h1>
-              <field name="name"></field>
-            </h1>
-          </div>
+        <div class="oe_title">
+          <label for="name"></label>
+          <h1>
+            <field name="name"></field>
+          </h1>
+        </div>
         <sheet>
           <group>
             <group>
+              <field name="reference"/>
+              <field name="currency_id"/>
               <field name="price"/>
               <field name="date"/>
             </group>
@@ -43,6 +47,10 @@
             </page>
           </notebook>
         </sheet>
+        <div class="oe_chatter">
+          <field name="message_follower_ids" groups="base.group_user"/>
+          <field name="message_ids"/>
+        </div>
       </form>
     </field>
   </record>
@@ -51,6 +59,15 @@
     <field name="name">Expense</field>
     <field name="res_model">expense</field>
     <field name="view_mode">tree,form</field>
+    <!--    Liên kết đến views liên quan và quản lý thứ tự hiển thị-->
+    <field name="view_ids" eval="[Command.clear(),
+      (0,0,{'view_mode': 'tree', 'view_id': ref('view_expense_tree')}),
+      (0,0,{'view_mode': 'form', 'view_id': ref('view_expense_form')})]"/>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        Create a new expense
+      </p>
+    </field>
   </record>
 
   <menuitem id="expense_menu" name="Expenses" groups="base.group_user"/>

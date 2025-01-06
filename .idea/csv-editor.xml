@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\account\security\ir.model.access.csv">
           <value>
             <Attribute>
@@ -613,6 +620,20 @@
           </value>
         </entry>
         <entry key="\odoo\addons\z_football_resource\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\z_module_01\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\z_orm_crud\security\ir.model.access.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
