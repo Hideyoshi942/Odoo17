@@ -10,5 +10,7 @@
     'security/ir.model.access.csv',
     'data/sequence.xml',
     'views/expense_views.xml',
-  ]
+  ],
+  'images': ['static/description/salelogo.png'],
+  'license': 'LGPL-3',
 }

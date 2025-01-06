@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_user_student,access.student,model_student_user,z_orm_crud.group_student,1,0,0,0
+access_user_management,access.management,model_student_user,z_orm_crud.group_management,1,1,1,1
