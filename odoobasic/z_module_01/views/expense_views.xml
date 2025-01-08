@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+  <!-- Tree View -->
   <record id="view_expense_tree" model="ir.ui.view">
     <field name="name">expense.tree</field>
     <field name="model">expense</field>
     <field name="arch" type="xml">
       <tree string="Expense">
+        <!-- Các cột dữ liệu -->
+        <field name="sequence" widget="handle"/>
         <field name="reference"/>
         <field name="image" widget="image" class="oe_avatar"/>
         <field name="name"/>
@@ -13,22 +16,31 @@
         <field name="date"/>
       </tree>
     </field>
-
   </record>
 
+  <!-- Form View -->
   <record id="view_expense_form" model="ir.ui.view">
     <field name="name">expense.form</field>
     <field name="model">expense</field>
     <field name="arch" type="xml">
       <form string="Expense">
-        <field name="image" widget="image" class="oe_avatar"/>
-        <div class="oe_title">
-          <label for="name"></label>
-          <h1>
-            <field name="name"></field>
-          </h1>
-        </div>
+        <header>
+          <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
+          <button string="Create Expense" type="object" name="action_create_expense"
+            class="btn-primary" groups="group_manager"/>
+          <button string="Cancel" class="btn-secondary" special="cancel"/>
+        </header>
         <sheet>
+          <!-- Phần hiển thị hình ảnh và tên -->
+          <field name="image" widget="image" class="oe_avatar"/>
+          <div class="oe_title">
+            <label for="name"/>
+            <h1>
+              <field name="name"/>
+            </h1>
+          </div>
+
+          <!-- Nội dung chính -->
           <group>
             <group>
               <field name="reference"/>
@@ -39,14 +51,20 @@
             <group>
               <field name="quantity"/>
               <field name="category"/>
+              <field name="store_ids"/>
+              <field name="provider_ids"/>
             </group>
           </group>
+
+          <!-- Tab notebook -->
           <notebook>
             <page string="Description">
               <field name="description"/>
             </page>
           </notebook>
         </sheet>
+
+        <!-- Phần chatter (tin nhắn, ghi chú) -->
         <div class="oe_chatter">
           <field name="message_follower_ids" groups="base.group_user"/>
           <field name="message_ids"/>
@@ -55,14 +73,17 @@
     </field>
   </record>
 
+  <!-- Action -->
   <record id="expense_action" model="ir.actions.act_window">
     <field name="name">Expense</field>
     <field name="res_model">expense</field>
     <field name="view_mode">tree,form</field>
-    <!--    Liên kết đến views liên quan và quản lý thứ tự hiển thị-->
-    <field name="view_ids" eval="[Command.clear(),
+    <field name="context">{}</field>
+    <field name="view_ids" eval="[
+      Command.clear(),
       (0,0,{'view_mode': 'tree', 'view_id': ref('view_expense_tree')}),
-      (0,0,{'view_mode': 'form', 'view_id': ref('view_expense_form')})]"/>
+      (0,0,{'view_mode': 'form', 'view_id': ref('view_expense_form')})
+    ]"/>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">
         Create a new expense
@@ -70,8 +91,9 @@
     </field>
   </record>
 
-  <menuitem id="expense_menu" name="Expenses" groups="base.group_user"/>
-  <menuitem id="expense_menu_1" name="List Expense" parent="expense_menu" action="expense_action"
-    groups="base.group_user"/>
-
+  <record id="expense_url" model="ir.actions.act_url">
+    <field name="name">Go to ORM</field>
+    <field name="url">/orm_crud</field>  <!-- URL mà bạn muốn chuyển hướng đến -->
+    <field name="target">new</field>  <!-- 'new' để mở trong một tab mới, hoặc 'current' để mở trong tab hiện tại -->
+  </record>
 </odoo>

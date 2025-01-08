@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Tree View -->
+  <record id="view_provider_tree" model="ir.ui.view">
+    <field name="name">provider.tree</field>
+    <field name="model">provider</field>
+    <field name="arch" type="xml">
+      <tree string="Provider">
+        <!-- Các cột dữ liệu -->
+        <field name="name"/>
+        <field name="phone"/>
+        <field name="email"/>
+        <field name="address"/>
+      </tree>
+    </field>
+  </record>
+
+  <!-- Form View -->
+  <record id="view_provider_form" model="ir.ui.view">
+    <field name="name">provider.form</field>
+    <field name="model">provider</field>
+    <field name="arch" type="xml">
+      <form string="Provider">
+        <sheet>
+          <!-- Nội dung chính -->
+          <group>
+            <group>
+              <field name="name"/>
+              <field name="phone"/>
+              <field name="email"/>
+              <field name="address"/>
+            </group>
+            <group>
+              <field name="expense_ids"/>
+              <field name="store_ids"/>
+            </group>
+          </group>
+
+          <!-- Tab notebook -->
+          <notebook>
+            <page string="Description">
+              <field name="description"/>
+            </page>
+            <page string="History">
+              <field name="history"/>
+            </page>
+          </notebook>
+        </sheet>
+
+        <!-- Phần chatter (tin nhắn, ghi chú) -->
+        <div class="oe_chatter">
+          <field name="message_follower_ids" groups="base.group_user"/>
+          <field name="message_ids"/>
+        </div>
+      </form>
+    </field>
+  </record>
+
+  <!-- Action -->
+  <record id="provider_action" model="ir.actions.act_window">
+    <field name="name">Provider</field>
+    <field name="res_model">provider</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="view_ids" eval="[
+      Command.clear(),
+      (0,0,{'view_mode': 'tree', 'view_id': ref('view_provider_tree')}),
+      (0,0,{'view_mode': 'form', 'view_id': ref('view_provider_form')})
+    ]"/>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        Create a new provider
+      </p>
+    </field>
+  </record>
+</odoo>

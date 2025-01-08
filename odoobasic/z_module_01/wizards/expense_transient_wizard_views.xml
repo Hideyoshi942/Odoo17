@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="transient_model_view_form" model="ir.ui.view">
+		<field name="name">transient.model.form</field>
+		<field name="model">expense.transient</field>
+		<field name="arch" type="xml">
+			<form string="Create Expense">
+				<header>
+          <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
+        </header>
+        <sheet>
+				<!-- Phần hiển thị hình ảnh và tên -->
+          <field name="image" widget="image" class="oe_avatar"/>
+          <div class="oe_title">
+            <label for="name"/>
+            <h1>
+              <field name="name"/>
+            </h1>
+          </div>
+
+          <!-- Nội dung chính -->
+          <group>
+            <group>
+              <field name="reference"/>
+              <field name="currency_id"/>
+              <field name="price"/>
+              <field name="date"/>
+            </group>
+            <group>
+              <field name="quantity"/>
+              <field name="category"/>
+              <field name="store_ids"/>
+              <field name="provider_ids"/>
+            </group>
+          </group>
+
+          <!-- Tab notebook -->
+          <notebook>
+            <page string="Description">
+              <field name="description"/>
+            </page>
+          </notebook>
+        </sheet>
+
+        <!-- Phần chatter (tin nhắn, ghi chú) -->
+        <div class="oe_chatter">
+          <field name="message_follower_ids" groups="base.group_user"/>
+          <field name="message_ids"/>
+        </div>
+				<footer>
+					<button string="Create Expense" name="action_create_expense" type="object" class="oe_highlight" />
+				</footer>
+			</form>
+		</field>
+	</record>
+</odoo>

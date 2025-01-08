@@ -1,0 +1,23 @@
+from odoo import models, fields, api
+
+class EmployeeExpense(models.Model):
+    _name = 'employee.expense'
+    _description = 'Employee Expense'
+    _inherit = ['mail.thread']
+
+    name = fields.Char(string="Expense Name", required=True, tracking=True)
+    # employee_id = fields.Many2one('hr.employee', string="Employee", required=True)
+    amount = fields.Float(string="Amount", required=True)
+    state = fields.Selection([
+        ('draft', 'Draft'),
+        ('submitted', 'Submitted'),
+        ('approved', 'Approved'),
+        ('rejected', 'Rejected'),
+    ], default='draft', tracking=True)
+    description = fields.Text(string="Description")
+
+    def action_submit(self):
+        self.state = 'submitted'
+
+    def action_reset(self):
+        self.state = 'draft'

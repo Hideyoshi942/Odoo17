@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\odoo\addons\account\data\template\account.account-generic_coa.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\account\security\ir.model.access.csv">
           <value>
             <Attribute>
@@ -25,6 +32,13 @@
           </value>
         </entry>
         <entry key="\odoo\addons\barcodes\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\base_import\static\csv\o2m_customers_contacts.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -157,7 +171,119 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_ae\data\template\account.account-ae.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ar\data\l10n_latam.document.type.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ar\data\template\account.account-ar_base.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ar\data\template\account.account-ar_ex.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_at\data\template\account.account-at.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_au\data\template\account.account-au.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_bd\data\account.account.tag.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_bd\data\template\account.account-bd.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_be\data\template\account.account-be.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_be\data\template\account.account-be_asso.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_be\data\template\account.account-be_comp.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_bg\data\template\account.account-bg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_bg\data\template\account.group-bg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_bh\data\template\account.account-bh.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_bo\data\template\account.account-bo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_bo\data\template\account.tax-bo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_br\data\template\account.account-br.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -178,7 +304,56 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_ch\data\template\account.account-ch.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_ch\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_cl\data\template\account.account-cl.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_cn\data\template\account.account-cn_common.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_cn\data\template\account.account-cn_large_bis.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_co\data\template\account.account-co.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_cr\data\template\account.account-cr.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_cy\data\template\account.account-cy.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -192,7 +367,105 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_de\data\template\account.account-de_skr03.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_de\data\template\account.account-de_skr04.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_dk\data\template\account.account-dk.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_do\data\template\account.account-do.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_do\data\template\account.group-do.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_dz\data\template\account.account-dz.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ec\data\template\account.account-ec.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ec\data\template\account.group-ec.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ec\data\template\account.tax-ec.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ee\data\template\account.account-ee.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_eg\data\template\account.account-eg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_es\data\template\account.account-es_assec.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_es\data\template\account.account-es_common.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_es\data\template\account.account-es_coop_full.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_es\data\template\account.account-es_coop_pymes.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -206,7 +479,35 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_es\data\template\account.account-es_pymes.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_es\data\template\account.group-es_common.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_et\data\template\account.account-et.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_fi\data\template\account.account-fi.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_fr\data\template\account.account-fr.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -220,7 +521,91 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_gr\data\template\account.account-gr.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_gr\data\template\account.group-gr.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_gt\data\template\account.account-gt.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_hk\data\template\account.account-hk.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_hn\data\template\account.account-hn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_hr\data\template\account.account-hr.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_hr_kuna\data\template\account.account-hr_kuna.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_hu\data\template\account.account-hu.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_id\data\template\account.account-id.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_id_efaktur\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ie\data\template\account.account-ie.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_il\data\template\account.account-il.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_in\data\template\account.account-in.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -234,7 +619,49 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_iq\data\template\account.account-iq.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_it\data\template\account.account-it.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_jo\data\template\account.account-jo_standard.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_jp\data\template\account.account-jp.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_ke\data\l10n_ke.item.code.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ke\data\template\account.account-ke.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_kw\data\template\account.account-kw.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -248,6 +675,62 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_lb_account\data\template\account.account-lb.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_lt\data\template\account.account-lt.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_lu\data\template\account.account-lu.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_lv\data\template\account.account-lv.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ma\data\template\account.account-ma.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ma\data\template\account.group-ma.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_mn\data\template\account.account-mn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_mt\data\template\account.account-mt.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_mt_pos\security\ir.model.access.csv">
           <value>
             <Attribute>
@@ -255,7 +738,203 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_mu_account\data\template\account.account-mu.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_mx\data\template\account.account-mx.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_mx\data\template\account.group-mx.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_my\data\template\account.account-my.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_my_edi\data\l10n_my_edi.industry_classification.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_mz\data\template\account.account-mz.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_nl\data\template\account.account-nl.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_no\data\template\account.account-no.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_nz\data\template\account.account-nz.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pa\data\template\account.account-pa.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pe\data\template\account.account-pe.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pe\data\template\account.group-pe.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pe\data\template\account.tax-pe.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ph\data\template\account.account-ph.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pk\data\template\account.account-pk.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pk\data\template\account.group-pk.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pl\data\template\account.account-pl.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_pt\data\template\account.account-pt.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_qa\data\template\account.account-qa.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ro\data\template\account.account-ro.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ro\data\template\account.group-ro.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_rs\data\template\account.account-rs.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_rw\data\template\account.account-rw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_sa\data\template\account.account-sa.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_se\data\template\account.account-se.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_se\data\template\account.account-se_K2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_se\data\template\account.account-se_K3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_se\data\template\account.group-se.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_sg\data\template\account.account-sg.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -276,6 +955,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\odoo\addons\l10n_sk\data\template\account.account-sk.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\odoo\addons\l10n_syscohada\data\template\account.account-syscebnl.csv">
           <value>
             <Attribute>
@@ -284,6 +970,125 @@
           </value>
         </entry>
         <entry key="\odoo\addons\l10n_syscohada\data\template\account.account-syscohada.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_syscohada\data\template\account.account.group-syscebnl.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_th\data\template\account.account-th.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_tn\data\template\account.account-tn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_tn\data\template\account.group-tn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_tr\data\template\account.account-tr.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_tr\data\template\account.group-tr.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_tw\data\template\account.account-tw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_tz_account\data\template\account.account-tz.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ua\data\template\account.account-ua_ias.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ua\data\template\account.account-ua_psbo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ug\data\template\account.account-ug.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_uk\data\template\account.account-uk.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_uy\data\template\account.account-uy.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_ve\data\template\account.account-ve.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_vn\data\template\account.account-vn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_za\data\template\account.account-za.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\l10n_zm_account\data\template\account.account-zm.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -438,6 +1243,13 @@
           </value>
         </entry>
         <entry key="\odoo\addons\sale\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoo\addons\sale_expense\security\ir.model.access.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -612,28 +1424,28 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\odoo\addons\z_football_resource\security\ir.model.access.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\odoo\addons\z_module_01\security\ir.model.access.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\odoo\addons\z_orm_crud\security\ir.model.access.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\odoo\odoo\addons\base\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoobasic\employee_expense\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoobasic\z_football_resource\security\ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\odoobasic\z_module_01\security\ir.model.access.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
