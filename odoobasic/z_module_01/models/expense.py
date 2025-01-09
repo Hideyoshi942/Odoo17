@@ -58,3 +58,26 @@ class Expense(models.Model):
       'view_mode': 'form',
       'target': 'new',
     }
+
+  def action_create_multi_expense(self):
+    return {
+      'name': 'Create Multi Expense',
+      'type': 'ir.actions.act_window',
+      'res_model': 'wizard.expense_wizard',
+      'view_mode': 'form',
+      'target': 'new',
+    }
+
+  # @api.model_create_multi
+  # def create(self, vals_list):
+  #   """Override create method to handle multiple record creation."""
+  #   for vals in vals_list:
+  #     # Logic bổ sung nếu cần, ví dụ: kiểm tra dữ liệu
+  #     if vals.get('price', 0) <= 0:
+  #       raise ValidationError("Price must be greater than 0")
+  #     if vals.get('quantity', 0) <= 0:
+  #       raise ValidationError("Quantity must be greater than 0")
+  #
+  #   # Gọi phương thức `create` gốc để lưu các bản ghi
+  #   records = super(Expense, self).create(vals_list)
+  #   return records

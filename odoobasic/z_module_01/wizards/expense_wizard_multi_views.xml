@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record id="view_expense_wizard_form" model="ir.ui.view">
+      <field name="name">expense.wizard.form</field>
+      <field name="model">wizard.expense_wizard</field>
+      <field name="arch" type="xml">
+        <form string="Create Multiple Expenses">
+          <group>
+            <field name="expense_lines">
+              <tree editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="reference"/>
+                <field name="image" widget="image" class="oe_avatar"/>
+                <field name="name"/>
+                <field name="currency_id"/>
+                <field name="price"/>
+                <field name="date"/>
+              </tree>
+            </field>
+          </group>
+          <footer>
+            <button string="Create Expenses" type="object" name="action_create_expenses"
+              class="btn-primary"/>
+            <button string="Cancel" class="btn-secondary" special="cancel"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>

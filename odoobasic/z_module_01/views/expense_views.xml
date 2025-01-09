@@ -27,7 +27,9 @@
         <header>
           <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
           <button string="Create Expense" type="object" name="action_create_expense"
-            class="btn-primary" groups="group_manager"/>
+            class="btn-primary" groups="z_module_01.group_manager"/>
+          <button string="Create Multiple Expenses" type="object" name="action_create_multi_expense"
+            class="btn-secondary" />
           <button string="Cancel" class="btn-secondary" special="cancel"/>
         </header>
         <sheet>
@@ -39,7 +41,6 @@
               <field name="name"/>
             </h1>
           </div>
-
           <!-- Nội dung chính -->
           <group>
             <group>
@@ -63,7 +64,6 @@
             </page>
           </notebook>
         </sheet>
-
         <!-- Phần chatter (tin nhắn, ghi chú) -->
         <div class="oe_chatter">
           <field name="message_follower_ids" groups="base.group_user"/>
@@ -89,6 +89,13 @@
         Create a new expense
       </p>
     </field>
+  </record>
+
+  <record id="action_expense_wizard" model="ir.actions.act_window">
+    <field name="name">Create Multiple Expenses</field>
+    <field name="res_model">expense</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
   </record>
 
   <record id="expense_url" model="ir.actions.act_url">

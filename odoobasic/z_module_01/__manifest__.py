@@ -6,9 +6,11 @@
   'category': 'Project',
   'depends': ['base','mail'],
   'data': [
-    'security/ir.model.access.csv',
     'security/user_management_views.xml',
+    'security/ir.model.access.csv',
     'data/sequence.xml',
+    'wizards/expense_wizard_multi_views.xml',
+    'wizards/expense_transient_wizard_views.xml',
     'views/orm_crud_views.xml',
     'views/expense_views.xml',
     'views/store_views.xml',
