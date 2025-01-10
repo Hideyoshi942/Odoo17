@@ -18,6 +18,9 @@
     'views/menu_root_views.xml',
   ],
   'assets': {
+    'web.assets_frontend': [
+      'z_module_01/static/src/css/kanban_style.css',
+    ],
     'web.assets_backend': [
       'z_module_01/static/scss/product_template.scss',
     ],

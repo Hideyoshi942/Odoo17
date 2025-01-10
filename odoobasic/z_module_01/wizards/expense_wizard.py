@@ -5,6 +5,7 @@ from odoo.exceptions import ValidationError
 class ExpenseWizard(models.TransientModel):
   _name = 'wizard.expense_wizard'
   _description = 'Expense Wizard'
+  _inherit = 'mail.thread'
 
   expense_lines = fields.Many2one('expense.transient', string='Expense Lines')
 

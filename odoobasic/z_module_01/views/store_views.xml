@@ -21,6 +21,9 @@
     <field name="model">store</field>
     <field name="arch" type="xml">
       <form string="Store">
+        <header>
+          <button name="action_store" string="Store Action" groups="z_module_01.group_manager" type="object"/>
+        </header>
         <sheet>
           <!-- Nội dung chính -->
           <group>

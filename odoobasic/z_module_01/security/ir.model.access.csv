@@ -1,6 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_user_employee,user.employee,model_expense,z_module_01.group_user,1,0,0,0
 access_user_admin,user.admin,model_expense,z_module_01.group_admin,1,1,0,0
+access_user_security,user.security,model_expense,z_module_01.group_security,1,1,1,0
 access_user_manager,user.manager,model_expense,z_module_01.group_manager,1,1,1,1
 
 

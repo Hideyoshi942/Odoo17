@@ -21,6 +21,9 @@
     <field name="model">provider</field>
     <field name="arch" type="xml">
       <form string="Provider">
+        <header>
+          <button name="action_provider" string="Provider Action" groups="z_module_01.group_manager" type="object"/>
+        </header>
         <sheet>
           <!-- Nội dung chính -->
           <group>
