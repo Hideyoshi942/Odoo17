@@ -9,6 +9,7 @@ password = '1'
 
 api_key_external = 'f19847baac47812afcf2362bfaf6a5acb8402bf6'
 
+# xml api
 common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(url))
 print("version info", common.version())
 
