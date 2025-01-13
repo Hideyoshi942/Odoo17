@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="1">
+    <record id="ir_cron_daily_report" forcecreate='True' model="ir.cron">
+      <field name="name">Daily Report</field>
+      <field eval="True" name="active"/>
+      <field name="priority">10</field>
+      <field name="interval_number">1</field>
+      <field name="interval_type">days</field>
+<!--      số lần chạy (-1: vô hạn)-->
+      <field name="numbercall">10</field>
+      <field name="nextcall" eval="(datetime.utcnow() + timedelta(days=0)).strftime('%Y-%m-%d 12:01:00')"/>
+<!--      thêm model_ + name của model bạn muốn gửi report-->
+      <field name="model_id" ref="model_expense"/>
+      <field name="state">code</field>
+      <field name="code">model.send_daily_sales_report()</field>
+    </record>
+
+  </data>
+</odoo>

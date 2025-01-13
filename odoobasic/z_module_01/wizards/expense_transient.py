@@ -6,7 +6,6 @@ class ExpenseTransientModel(models.TransientModel):
   _description = 'Expense Transient Model'
   _inherit = ['mail.thread']
 
-  wizard_id = fields.Many2one('wizard.expense_wizard', string='Wizard')
 
   reference = fields.Char(string="Name", required=True,
                           default=lambda self: self.env[

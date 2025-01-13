@@ -1,5 +1,6 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
+from datetime import datetime
 
 
 class Expense(models.Model):
@@ -85,20 +86,6 @@ class Expense(models.Model):
         )
       else:
         record.converted_price = 0.0
-
-  # @api.model_create_multi
-  # def create(self, vals_list):
-  #   """Override create method to handle multiple record creation."""
-  #   for vals in vals_list:
-  #     # Logic bổ sung nếu cần, ví dụ: kiểm tra dữ liệu
-  #     if vals.get('price', 0) <= 0:
-  #       raise ValidationError("Price must be greater than 0")
-  #     if vals.get('quantity', 0) <= 0:
-  #       raise ValidationError("Quantity must be greater than 0")
-  #
-  #   # Gọi phương thức `create` gốc để lưu các bản ghi
-  #   records = super(Expense, self).create(vals_list)
-  #   return records
 
   # orm
   def action_search_expense(self):
@@ -224,3 +211,15 @@ class Expense(models.Model):
       # # trả về một dictionary với khóa là giá trị của trường nhóm.
       # partners_grouping = partners_sorted.groupby('name')
       # print("Grouping: ", partners_grouping)
+
+  @api.model
+  def send_daily_sales_report(self):
+    for employee in self.env['expense'].search([]):
+      # Logic gửi email hoặc lưu báo cáo
+      mail_values = {
+        'email_to': 'unclekiet2424@gmail.com',
+        'subject': 'Daily Sales Report',
+        'body_html': f'Total sales for today: {employee.name, employee.price}',
+      }
+      mail = (self.env['mail.mail'].create(mail_values))
+      mail.send()

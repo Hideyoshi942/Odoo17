@@ -24,10 +24,9 @@ payload = {
 }
 
 response = requests.post(f"{url}/web/session/authenticate", json=payload)
-uid = response.json()["result"]["uid"]
-if not uid:
-    print("Authentication failed")
-    exit()
+
+response1 = response.json()
+
 
 # Trích xuất dữ liệu từ res.partner
 payload = {

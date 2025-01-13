@@ -49,6 +49,7 @@
         </div>
 				<footer>
 					<button string="Create Expense" name="action_create_expense" type="object" class="oe_highlight" />
+          <button string="Cancel" special="cancel" />
 				</footer>
 			</form>
 		</field>
