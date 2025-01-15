@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="expense_card_pdf_template_report">
+    <t t-call="web.basic_layout">
+      <div class="page">
+        <t t-foreach="docs" t-as="doc">
+          <div class="col=md-6">
+            <table
+              style="width: 240pt; height: 150pt; border: 1pt solid black; border-collapse: separate;
+               border-radius: 8pt; margin: 5pt">
+              <tr>
+                <td>
+                  <img
+                    t-if="doc.image"
+                    style="width: 100px; height: 100px;"
+                    t-att-src="image_data_uri(doc.image)" alt="Expense"/>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <th>
+                        <t t-esc="doc.name"/>
+                      </th>
+                      <th>
+                        <t t-esc="doc.store_ids.name"/>
+                      </th>
+                      <th>
+                        <t t-esc="doc.provider_ids.name"/>
+                      </th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </t>
+      </div>
+    </t>
+  </template>
+
+  <record id="expense_profile_card_report" model="ir.actions.report">
+    <field name="name">Expense Card Report</field>
+    <field name="model">expense</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">z_module_01.expense_card_pdf_template_report</field>
+    <field name="report_file">z_module_01.expense_card_pdf_template_report</field>
+    <field name="print_report_name">'Expense Card'</field>
+    <field name="binding_model_id" ref="model_expense"/>
+    <field name="binding_type">report</field>
+  </record>
+</odoo>

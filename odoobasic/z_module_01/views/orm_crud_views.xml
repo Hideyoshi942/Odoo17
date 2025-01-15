@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="z_module_01.orm_crud_template" name="Product Catalog">
+    <t inherit_id="website.layout">
+      <div class="container">
+        <h1>Product Catalog</h1>
+        <ul>
+          <t t-foreach="expenses" t-as="expense">
+            <li>
+              <h3><t t-esc="expense.name"/></h3>
+              <p><t t-esc="expense.price"/></p>
+            </li>
+          </t>
+        </ul>
+      </div>
+    </t>
+  </template>
+</odoo>

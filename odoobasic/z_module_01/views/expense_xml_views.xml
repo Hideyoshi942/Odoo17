@@ -1,0 +1,29 @@
+<odoo>
+  <template id="z_module_01.expense_xml_template" name="Expense List">
+    <t inherit_id="website.layout">
+      <div class="container">
+        <h1>Expense List</h1>
+        <t t-if="expenses_xml">
+          <ul>
+            <t t-foreach="expenses_xml" t-as="expense_xml">
+              <li>
+                <strong>
+                  <t t-esc="expense_xml['name']"/>
+                </strong>
+                -
+                Price:
+                <t t-esc="expense_xml['price']"/>
+                -
+                Category:
+                <t t-esc="expense_xml['category']"/>
+              </li>
+            </t>
+          </ul>
+        </t>
+        <t t-else="">
+          <p>No expense found.</p>
+        </t>
+      </div>
+    </t>
+  </template>
+</odoo>

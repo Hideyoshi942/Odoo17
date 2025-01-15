@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!--    <report-->
+  <!--      id="report_expense"-->
+  <!--      model="z_module_01.expense"-->
+  <!--      string="Report Expense"-->
+  <!--      name="z_module_01.report_expense_view"-->
+  <!--      file="z_module_01.report_expense_view"-->
+  <!--      report_type="qweb-pdf"-->
+  <!--    />-->
+
+  <template id="report_expense_view">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="doc">
+        <t t-call="z_module_01.sub_expense_template"/>
+      </t>
+    </t>
+  </template>
+
+  <template id="sub_expense_template">
+    <t t-call="web.external_layout">
+      <div class="page">
+        <h1>Called....</h1>
+        <!--            t-field, t-set, t-esc, t-out-->
+        <!--            <h1>Report Expense</h1>-->
+        <!--            <h4 t-esc="doc.name"/>-->
+        <!--&lt;!&ndash;            Trường tự định nghĩa với t-value là giá trị của doc.description&ndash;&gt;-->
+        <!--            <h4 t-set="a" t-value="doc.description"/>-->
+        <!--            <h4 t-esc="a"/>-->
+        <!--            <h4 t-field="doc.price"/>-->
+        <!--            <h4 t-esc="doc.quantity"/>-->
+        <!--            <h4 t-esc="doc.date"/>-->
+
+        <!--            conditional statement-->
+        <!--            <t t-if="doc.state == 'draft'">-->
+        <!--              <h1>Report Expense</h1>-->
+        <!--              <h4 t-esc="doc.name"/>-->
+        <!--              <h1>Draft</h1>-->
+        <!--            </t>-->
+        <!--            <t t-elif="doc.state == 'confirm'">-->
+        <!--              <h1>Report Expense</h1> -->
+        <!--              <h4 t-esc="doc.name"/>-->
+        <!--              <h1>Confirm</h1>-->
+        <!--            </t>-->
+        <!--            <t t-else="">-->
+        <!--              <h1>Report Expense</h1>-->
+        <!--              <h4 t-esc="doc.name"/>-->
+        <!--              <h1>Other</h1>-->
+        <!--            </t>-->
+
+        <!--            Loop Statement-->
+        <!--            <t t-foreach="doc.state" t-as="state">-->
+        <!--              <h1>State Name: <t t-esc="state"/></h1>-->
+        <!--            </t>-->
+
+        <!--            <t t-foreach="doc.state" t-as="state">-->
+        <!--              <h1 t-esc="state"/>-->
+        <!--&lt;!&ndash;              sử dụng _ để in ra giá trị&ndash;&gt;-->
+        <!--&lt;!&ndash;              sử dụng . để in ra địa chỉ&ndash;&gt;-->
+        <!--&lt;!&ndash;              state_index: in ra vị trí của state&ndash;&gt;-->
+        <!--&lt;!&ndash;              state.index: in ra địa chỉ của state&ndash;&gt;-->
+        <!--              Sequence of foreach loop: <span t-esc="state_index"/>-->
+        <!--              First of state: <span t-esc="state_first"/>-->
+        <!--              Last of state: <span t-esc="state_last"/>-->
+        <!--              Value of state: <span t-esc="state_value"/>-->
+        <!--&lt;!&ndash;              Parity: chẵn(even) lẻ(odd)&ndash;&gt;-->
+        <!--              Parity of state: <span t-esc="state_parity"/>-->
+        <!--            </t>-->
+
+        <!--            variable statement-->
+        <!--            <t t-set="a" t-value="'Hello World'"/>-->
+        <!--            <t t-esc="a"/>-->
+
+        <!--                t-att -->
+        <!--            style một trường-->
+        <!--        <p t-att="['style','background-color:red;']">-->
+        <!--          Hello Zen8labs-->
+        <!--        </p>-->
+        <!--        &lt;!&ndash;            style nhiều trường&ndash;&gt;-->
+        <!--        <p t-att="{'style':'color: red;', 'font-weight':'bold;'}">-->
+        <!--          Zen8labs-->
+        <!--        </p>-->
+        <!--        <a t-att-href="doc.store_ids.phone">Google</a>-->
+
+        <!--        &lt;!&ndash;        t-attf: linh hoạt hơn t-att&ndash;&gt;-->
+        <!--        <p t-attf-style="background-color: green;">-->
+        <!--          t-attf using for style attribute-->
+        <!--        </p>-->
+
+        <!--        &lt;!&ndash;        tên biến viriable là biến có thể thay đổi dựa theo trường dữ liệu&ndash;&gt;-->
+        <!--        <p t-attf-style="background-color: {doc.variable};">-->
+        <!--          t-attf using for style attribute-->
+        <!--        </p>-->
+
+        <!--        có thể sử dụng biểu thức trong đây-->
+        <!--        <p t-attf-style="background-color: {doc.state == 'draft' if 'red' else 'blue'};">-->
+        <!--          t-attf using for style attribute-->
+        <!--        </p>-->
+      </div>
+    </t>
+  </template>
+
+  <!--        create paper format-->
+  <record id="expense_custom_report_paperformat" model="report.paperformat">
+    <field name="name">Expense custom report paper format</field>
+    <field name="format">A4</field>
+    <field name="orientation">Landscape</field>
+    <field name="page_height">0</field>
+    <field name="page_width">0</field>
+    <field name="margin_top">5</field>
+    <field name="margin_right">5</field>
+    <field name="margin_bottom">5</field>
+    <field name="margin_left">5</field>
+    <field name="header_spacing">35</field>
+    <field name="dpi">90</field>
+  </record>
+
+  <record id="expense_report_action" model="ir.actions.report">
+    <field name="name">Report Expense</field>
+    <field name="model">expense</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">z_module_01.report_expense_view</field>
+    <field name="report_file">z_module_01.report_expense_view</field>
+    <field name="print_report_name">'Report-Expense'</field>
+    <field name="binding_model_id" ref="model_expense"/>
+    <field name="binding_type">report</field>
+    <field name="attachment_use">False</field>
+    <field name="multi">False</field>
+    <field name="paperformat_id" ref="z_module_01.expense_custom_report_paperformat"/>
+  </record>
+</odoo>

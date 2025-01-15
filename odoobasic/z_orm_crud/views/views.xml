@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="student_user_list_view" model="ir.ui.view">
+      <field name="name">student.user.liss=t.view</field>
+      <field name="model">student.user</field>
+      <field name="arch" type="xml">
+
+        <tree>
+          <field name="student_id"/>
+          <field name="course"/>
+          <field name="age"/>
+          <field name="gender"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="student_user_form_view" model="ir.ui.view">
+      <field name="name">student.user.form.view</field>
+      <field name="model">student.user</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+            <button name="create_student_record" type="object" class="btn-primary"
+              string="Create Record"/>
+            <button name="retrieve_student_record" type="object" class="btn-primary"
+              string="Retrieve Record"/>
+            <button name="update_student_record" type="object" class="btn-primary"
+              string="Update Record"/>
+            <button name="delete_student_record" type="object" class="btn-primary"
+              string="Delete Record"/>
+          </header>
+          <sheet>
+            <group>
+              <field name="student_id"/>
+              <field name="course"/>
+              <field name="age"/>
+              <field name="gender"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_student_user" model="ir.actions.act_window">
+      <field name="name">Students</field>
+      <field name="res_model">student.user</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+      id="menu_main_student_user"
+      name="Students"
+      sequence="71"
+    />
+    <menuitem
+      id="menu_student_user"
+      name="Students"
+      parent="menu_main_student_user"
+      sequence="0"
+      action="action_student_user"
+    />
+  </data>
+</odoo>
