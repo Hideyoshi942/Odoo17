@@ -24,6 +24,7 @@ Long description of module's purpose
   'data': [
     # 'security/ir.model.access.csv',
     'views/todo_task_views.xml',
+    'views/res_partner.xml',
   ],
   # only loaded in demonstration mode
   'demo': [
@@ -38,6 +39,7 @@ Long description of module's purpose
     'web.assets_backend': [
       'education/static/src/components/*/*.js',
       'education/static/src/components/*/*.xml',
+      'education/static/src/components/*/*.scss',
     ],
   }
 }
